@@ -6,8 +6,8 @@ import Enum.CoresEnum;
 
 public class MontandoLoja {
 	
-	public static void cadastrarViolao(List<Produto> estoque, CoresEnum cor,double preco, String marca, String modelo, int quantidadeDeCordas, String tipo) {
-		for(int i = 0; i < 11; i++) {
+	public static void cadastrarViolao(int quantidadeDeProdutos, List<Produto> estoque, CoresEnum cor,double preco, String marca, String modelo, int quantidadeDeCordas, String tipo) {
+		for(int i = 0; i < quantidadeDeProdutos; i++) {
 			Produto produto = new Violao(cor, preco, marca, modelo, quantidadeDeCordas, tipo);
 			produto.codigo = produto.gerarCodigo();
 			estoque.add(produto);
