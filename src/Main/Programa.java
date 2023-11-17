@@ -2,7 +2,7 @@ package Main;
 
 import java.util.Scanner;
 
-import Enum.OpcoesEnum;
+import Enum.CoresEnum;
 import entities.Iniciar;
 import entities.MontandoLoja;
 

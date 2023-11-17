@@ -2,8 +2,11 @@ package entities;
 
 import java.util.Random;
 
+import Enum.CoresEnum;
+
 public class Produto {
 
+		protected CoresEnum cor;
 		protected Integer codigo;
 		protected Double preco;
 		protected String marca;
@@ -13,11 +16,16 @@ public class Produto {
 			
 		}
 
-		public Produto(Double preco, String marca, String modelo) {
+		
+
+		public Produto(CoresEnum cor, Double preco, String marca, String modelo) {
+			this.cor = cor;
 			this.preco = preco;
 			this.marca = marca;
 			this.modelo = modelo;
 		}
+
+
 
 		public Double getPreco() {
 			return preco;
