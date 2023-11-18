@@ -22,8 +22,12 @@ public class MontandoLoja {
 		
 	}
 	
-	public static void cadastrarCavaco(/* parametros */) {
-		
+	public static void cadastrarCavaco(int quantidadeDeProdutos, List<Produto> estoque, CoresEnum cor,double preco, String marca, String modelo, String tipo) {
+		for(int i = 0; i < quantidadeDeProdutos; i++) {
+			Produto produto = new Cavaco(cor, preco, marca, modelo, tipo);
+			produto.codigo = produto.gerarCodigo();
+			estoque.add(produto);
+		}
 	}
 			
 }
